@@ -1,0 +1,42 @@
+footer {
+  text-align: center;
+  color: $color-white;
+  margin-top: 75px;
+  .grid-layout {
+    border-top: 1px solid rgba(114, 114, 126, 0.2);
+    @include flexbox();
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    @include responsive-mobile {
+      justify-content: center;
+    }
+    #direitos-autorais {
+      margin-top: 20px;
+    }
+    p {
+      text-align: center;
+      color: rgb(114, 114, 126);
+      font: {
+        family: $font-secondary;
+        size: 1.8rem;
+      }
+    }
+    div {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;  
+      img {
+        width: 24px;
+        margin-left: 12px;
+      }
+      @include responsive-mobile {
+        width: 100%;
+        justify-content: center;
+        a:nth-child(1) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
